@@ -7,6 +7,12 @@
       "imageHint": "abstract technology"
     },
     {
+      "id": "hero-image-new",
+      "description": "A stunning, vibrant abstract background with flowing colors.",
+      "imageUrl": "https://images.unsplash.com/photo-1759185422905-57572ad69125?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx2aWJyYW50JTIwYWJzdHJhY3R8ZW58MHx8fHwxNzYxNzkxNzM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "vibrant abstract"
+    },
+    {
       "id": "testimonial-avatar-1",
       "description": "Portrait of a satisfied customer.",
       "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjE3ODg3ODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
