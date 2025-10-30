@@ -28,7 +28,7 @@ export function HeroSection() {
               </Button>
             </div>
           </div>
-          <div className="relative -mr-16 hidden md:block">
+          <div className="relative hidden md:block">
             {heroImage && (
               <Image
                 src={heroImage.imageUrl}
