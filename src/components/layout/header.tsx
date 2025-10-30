@@ -63,7 +63,7 @@ export function Header() {
             <Button variant="ghost" asChild>
               <Link href="#">Log in</Link>
             </Button>
-            <Button asChild className="bg-accent hover:bg-accent/90 text-accent-foreground">
+            <Button asChild>
               <Link href="#">Get Started</Link>
             </Button>
           </div>
@@ -95,7 +95,7 @@ export function Header() {
                  <Button variant="ghost" asChild>
                     <Link href="#">Log in</Link>
                 </Button>
-                <Button asChild className="bg-accent hover:bg-accent/90 text-accent-foreground">
+                <Button asChild>
                     <Link href="#">Get Started</Link>
                 </Button>
             </div>

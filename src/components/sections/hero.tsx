@@ -20,12 +20,12 @@ export function HeroSection() {
               LandingFlow provides the ultimate toolkit for developers to create, launch, and scale modern web applications with unparalleled speed and efficiency.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" asChild className="bg-accent hover:bg-accent/90 text-accent-foreground">
+              <Button size="lg" asChild>
                 <Link href="#">
                   Get Started Free
                 </Link>
               </Button>
-              <Button size="lg" variant="outline" asChild>
+              <Button size="lg" asChild>
                 <Link href="#">
                   Request a Demo <ChevronRight className="ml-2 h-5 w-5" />
                 </Link>
