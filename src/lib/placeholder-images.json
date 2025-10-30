@@ -19,6 +19,12 @@
       "imageHint": "abstract design"
     },
     {
+      "id": "hero-dashboard-app",
+      "description": "Clean and modern dashboard interface of a web application.",
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXNoYm9hcmQlMjBhcHB8ZW58MHx8fHwxNzYxOTk3MjU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dashboard app"
+    },
+    {
       "id": "testimonial-avatar-1",
       "description": "Portrait of a satisfied customer.",
       "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjE3ODg3ODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
