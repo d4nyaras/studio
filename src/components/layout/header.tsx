@@ -36,7 +36,7 @@ export function Header() {
     >
       <div className="container flex h-14 max-w-screen-2xl items-center">
         <div className="mr-4 flex">
-          <Link href="/" className="ml-6 flex items-center space-x-2">
+          <Link href="/" className="ml-6 flex items-center space-x-2 gap-2">
             <Logo className="h-6 w-6 text-primary" />
             <span className="hidden font-bold sm:inline-block font-headline">لندینگ‌فلو</span>
           </Link>
