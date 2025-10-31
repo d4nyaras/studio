@@ -4,23 +4,23 @@ import { Zap, ShieldCheck, BarChart, Code2 } from 'lucide-react';
 const features = [
   {
     icon: <Zap className="w-8 h-8 text-primary" />,
-    title: 'Seamless Integration',
-    description: 'Easily integrate with your existing stack. Our developer-friendly API makes setup a breeze.',
+    title: 'یکپارچه‌سازی بی‌نقص',
+    description: 'به راحتی با پشته فناوری فعلی خود یکپارچه شوید. API دوستدار توسعه‌دهنده ما راه‌اندازی را آسان می‌کند.',
   },
   {
     icon: <ShieldCheck className="w-8 h-8 text-primary" />,
-    title: 'Robust Security',
-    description: 'Protect your users with enterprise-grade security, including MFA and breach detection.',
+    title: 'امنیت قوی',
+    description: 'کاربران خود را با امنیت درجه یک سازمانی، از جمله MFA و تشخیص نفوذ، محافظت کنید.',
   },
   {
     icon: <BarChart className="w-8 h-8 text-primary" />,
-    title: 'Scalable Infrastructure',
-    description: 'Our platform is built to scale with you, ensuring reliability as your user base grows.',
+    title: 'زیرساخت مقیاس‌پذیر',
+    description: 'پلتفرم ما برای رشد همراه با شما ساخته شده است و با افزایش پایگاه کاربری شما، قابلیت اطمینان را تضمین می‌کند.',
   },
   {
     icon: <Code2 className="w-8 h-8 text-primary" />,
-    title: 'Developer Focused',
-    description: 'Built by developers, for developers. Extensive documentation and SDKs for your convenience.',
+    title: 'متمرکز بر توسعه‌دهنده',
+    description: 'ساخته شده توسط توسعه‌دهندگان، برای توسعه‌دهندگان. مستندات جامع و SDK برای راحتی شما.',
   },
 ];
 
@@ -29,9 +29,9 @@ export function FeaturesSection() {
     <section id="features" className="py-20 md:py-32 bg-secondary/50">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="font-headline text-3xl md:text-4xl font-bold mb-4">Powerful Features for Modern Apps</h2>
+          <h2 className="font-headline text-3xl md:text-4xl font-bold mb-4">ویژگی‌های قدرتمند برای برنامه‌های مدرن</h2>
           <p className="text-muted-foreground text-lg mb-12">
-            Everything you need to manage users and authentication, so you can focus on building your product.
+            هر آنچه برای مدیریت کاربران و احراز هویت نیاز دارید، تا بتوانید بر روی ساخت محصول خود تمرکز کنید.
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

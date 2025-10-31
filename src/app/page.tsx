@@ -6,6 +6,7 @@ import { TestimonialsSection } from '@/components/sections/testimonials';
 import { CtaSection } from '@/components/sections/cta';
 import { ContactSection } from '@/components/sections/contact';
 import { AiOptimizerSection } from '@/components/sections/ai-optimizer';
+import { BlogPreviewSection } from '@/components/sections/blog-preview';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <HeroSection />
         <FeaturesSection />
         <TestimonialsSection />
+        <BlogPreviewSection />
         <AiOptimizerSection />
         <CtaSection />
         <ContactSection />

@@ -4,35 +4,35 @@ import { Github, Twitter, Linkedin } from 'lucide-react';
 
 const footerNavs = [
   {
-    label: 'Product',
+    label: 'محصول',
     items: [
-      { href: '#features', name: 'Features' },
-      { href: '#', name: 'Pricing' },
-      { href: '#', name: 'Integrations' },
+      { href: '#features', name: 'ویژگی‌ها' },
+      { href: '#', name: 'قیمت‌گذاری' },
+      { href: '/blog', name: 'وبلاگ' },
     ],
   },
   {
-    label: 'Company',
+    label: 'شرکت',
     items: [
-      { href: '#', name: 'About' },
-      { href: '#', name: 'Careers' },
-      { href: '#', name: 'Blog' },
+      { href: '#', name: 'درباره ما' },
+      { href: '#', name: 'فرصت‌های شغلی' },
+      { href: '#', name: 'اخبار' },
     ],
   },
   {
-    label: 'Resources',
+    label: 'منابع',
     items: [
-      { href: '#', name: 'Documentation' },
-      { href: '#', name: 'Support' },
-      { href: '#contact', name: 'Contact' },
+      { href: '#', name: 'مستندات' },
+      { href: '#', name: 'پشتیبانی' },
+      { href: '#contact', name: 'تماس با ما' },
     ],
   },
 ];
 
 const socialLinks = [
-  { icon: <Twitter className="h-5 w-5" />, href: '#', name: 'Twitter' },
-  { icon: <Github className="h-5 w-5" />, href: '#', name: 'GitHub' },
-  { icon: <Linkedin className="h-5 w-5" />, href: '#', name: 'LinkedIn' },
+  { icon: <Twitter className="h-5 w-5" />, href: '#', name: 'توییتر' },
+  { icon: <Github className="h-5 w-5" />, href: '#', name: 'گیت‌هاب' },
+  { icon: <Linkedin className="h-5 w-5" />, href: '#', name: 'لینکدین' },
 ];
 
 export function Footer() {
@@ -43,10 +43,10 @@ export function Footer() {
           <div className="col-span-full lg:col-span-2">
             <Link href="/" className="flex items-center space-x-2 mb-4">
               <Logo className="h-8 w-8 text-primary" />
-              <span className="text-xl font-bold font-headline">LandingFlow</span>
+              <span className="text-xl font-bold font-headline">لندینگ‌فلو</span>
             </Link>
             <p className="text-muted-foreground max-w-xs">
-              The modern way to manage user identity and workflows.
+              راه مدرن برای مدیریت هویت کاربر و گردش کار.
             </p>
           </div>
           {footerNavs.map((nav) => (
@@ -66,7 +66,7 @@ export function Footer() {
         </div>
         <div className="mt-16 pt-8 border-t flex flex-col sm:flex-row justify-between items-center">
           <p className="text-muted-foreground text-sm">
-            &copy; {new Date().getFullYear()} LandingFlow, Inc. All rights reserved.
+            &copy; {new Date().getFullYear()} لندینگ‌فلو. تمامی حقوق محفوظ است.
           </p>
           <div className="flex items-center space-x-4 mt-4 sm:mt-0">
             {socialLinks.map((social) => (

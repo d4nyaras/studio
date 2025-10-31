@@ -6,23 +6,23 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 const testimonials = [
   {
     id: '1',
-    quote: "LandingFlow has been a game-changer for our development process. We've saved countless hours on authentication, allowing us to ship features faster than ever.",
-    name: 'Jane Doe',
-    title: 'CEO, TechCorp',
+    quote: "لندینگ‌فلو برای فرآیند توسعه ما یک تغییردهنده بازی بوده است. ما ساعت‌های بی‌شماری را در زمینه احراز هویت صرفه‌جویی کرده‌ایم که به ما امکان می‌دهد ویژگی‌ها را سریع‌تر از همیشه عرضه کنیم.",
+    name: 'سارا رضایی',
+    title: 'مدیرعامل، تک‌کورپ',
     avatarId: 'testimonial-avatar-1',
   },
   {
     id: '2',
-    quote: "The security features are top-notch, and the scalability is exactly what we needed. I can't recommend LandingFlow enough for any growing startup.",
-    name: 'John Smith',
-    title: 'CTO, Innovate Inc.',
+    quote: "ویژگی‌های امنیتی درجه یک هستند و مقیاس‌پذیری دقیقاً همان چیزی است که ما نیاز داشتیم. من لندینگ‌فلو را به هر استارتاپ در حال رشدی به شدت توصیه می‌کنم.",
+    name: 'علی احمدی',
+    title: 'مدیر ارشد فناوری، نوآوران',
     avatarId: 'testimonial-avatar-2',
   },
   {
     id: '3',
-    quote: "As a developer, I appreciate the clean API and excellent documentation. It's a joy to work with and has made my life so much easier.",
-    name: 'Alex Johnson',
-    title: 'Lead Engineer, DevSolutions',
+    quote: "به عنوان یک توسعه‌دهنده، از API تمیز و مستندات عالی آن قدردانی می‌کنم. کار با آن لذت‌بخش است و زندگی من را بسیار آسان‌تر کرده است.",
+    name: 'مریم محمدی',
+    title: 'مهندس ارشد، راه‌حل‌های توسعه',
     avatarId: 'testimonial-avatar-3',
   },
 ];
@@ -32,9 +32,9 @@ export function TestimonialsSection() {
     <section id="testimonials" className="py-20 md:py-32 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="font-headline text-3xl md:text-4xl font-bold mb-4">Loved by Teams Worldwide</h2>
+          <h2 className="font-headline text-3xl md:text-4xl font-bold mb-4">محبوب تیم‌ها در سراسر جهان</h2>
           <p className="text-muted-foreground text-lg mb-12">
-            Don't just take our word for it. Here's what our customers have to say.
+            فقط به حرف ما اکتفا نکنید. در اینجا چیزی است که مشتریان ما می‌گویند.
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -43,7 +43,7 @@ export function TestimonialsSection() {
             return (
               <Card key={testimonial.id} className="flex flex-col">
                 <CardContent className="pt-6 flex-grow">
-                  <blockquote className="text-muted-foreground italic border-l-2 pl-4">
+                  <blockquote className="text-muted-foreground italic border-r-2 pr-4">
                     "{testimonial.quote}"
                   </blockquote>
                 </CardContent>

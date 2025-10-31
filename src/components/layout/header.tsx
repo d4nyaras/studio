@@ -8,10 +8,11 @@ import { Logo } from '@/components/logo';
 import { cn } from '@/lib/utils';
 
 const navLinks = [
-  { href: '#features', label: 'Features' },
-  { href: '#testimonials', label: 'Testimonials' },
-  { href: '#ai-optimizer', label: 'AI Optimizer' },
-  { href: '#contact', label: 'Contact' },
+  { href: '#features', label: 'ویژگی‌ها' },
+  { href: '#testimonials', label: 'نظرات' },
+  { href: '/blog', label: 'وبلاگ' },
+  { href: '#ai-optimizer', label: 'بهینه‌ساز AI' },
+  { href: '#contact', label: 'تماس' },
 ];
 
 export function Header() {
@@ -29,15 +30,15 @@ export function Header() {
   return (
     <header
       className={cn(
-        'sticky top-0 z-50 w-full transition-all duration-300 px-8',
+        'sticky top-0 z-50 w-full transition-all duration-300 px-4',
         isScrolled ? 'border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60' : 'bg-background'
       )}
     >
       <div className="container flex h-14 max-w-screen-2xl items-center">
         <div className="mr-4 flex">
-          <Link href="/" className="mr-6 flex items-center space-x-2">
+          <Link href="/" className="ml-6 flex items-center space-x-2">
             <Logo className="h-6 w-6 text-primary" />
-            <span className="hidden font-bold sm:inline-block font-headline">LandingFlow</span>
+            <span className="hidden font-bold sm:inline-block font-headline">لندینگ‌فلو</span>
           </Link>
           <nav className="hidden items-center gap-6 text-sm md:flex">
             {navLinks.map((link) => (
@@ -56,15 +57,15 @@ export function Header() {
            <div className="md:hidden">
             <Button variant="ghost" size="icon" onClick={() => setIsOpen(!isOpen)}>
               {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-              <span className="sr-only">Toggle Menu</span>
+              <span className="sr-only">باز کردن منو</span>
             </Button>
           </div>
           <div className="hidden md:flex items-center space-x-2">
             <Button variant="ghost" asChild>
-              <Link href="#">Log in</Link>
+              <Link href="#">ورود</Link>
             </Button>
             <Button asChild>
-              <Link href="#">Get Started</Link>
+              <Link href="#">شروع کنید</Link>
             </Button>
           </div>
         </div>
@@ -93,10 +94,10 @@ export function Header() {
             </nav>
             <div className="flex flex-col gap-2">
                  <Button variant="ghost" asChild>
-                    <Link href="#">Log in</Link>
+                    <Link href="#">ورود</Link>
                 </Button>
                 <Button asChild>
-                    <Link href="#">Get Started</Link>
+                    <Link href="#">شروع کنید</Link>
                 </Button>
             </div>
           </div>

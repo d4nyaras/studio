@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'LandingFlow',
-  description: 'The ultimate solution for modern authentication and user management.',
+  title: 'لندینگ‌فلو',
+  description: 'راه حل نهایی برای احراز هویت و مدیریت کاربران مدرن.',
 };
 
 export default function RootLayout({
@@ -13,12 +13,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="fa" dir="rtl">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap"
           rel="stylesheet"
         />
       </head>

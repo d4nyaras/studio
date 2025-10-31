@@ -20,13 +20,13 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 
 const formSchema = z.object({
   name: z.string().min(2, {
-    message: 'Name must be at least 2 characters.',
+    message: 'نام باید حداقل ۲ کاراکتر باشد.',
   }),
   email: z.string().email({
-    message: 'Please enter a valid email address.',
+    message: 'لطفاً یک آدرس ایمیل معتبر وارد کنید.',
   }),
   message: z.string().min(10, {
-    message: 'Message must be at least 10 characters.',
+    message: 'پیام باید حداقل ۱۰ کاراکتر باشد.',
   }),
 });
 
@@ -51,8 +51,8 @@ export function ContactSection() {
     await new Promise((resolve) => setTimeout(resolve, 1000));
 
     toast({
-      title: 'Message Sent!',
-      description: "Thanks for reaching out. We'll get back to you soon.",
+      title: 'پیام ارسال شد!',
+      description: "از تماس شما متشکریم. به زودی با شما تماس خواهیم گرفت.",
     });
 
     form.reset();
@@ -63,15 +63,15 @@ export function ContactSection() {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="font-headline text-3xl md:text-4xl font-bold mb-4">Get in Touch</h2>
+            <h2 className="font-headline text-3xl md:text-4xl font-bold mb-4">در تماس باشید</h2>
             <p className="text-muted-foreground text-lg mb-8">
-              Have questions or want to learn more about our enterprise plans? Drop us a line, and we'll be happy to help.
+              سوالی دارید یا می‌خواهید درباره طرح‌های سازمانی ما بیشتر بدانید؟ با ما تماس بگیرید، خوشحال می‌شویم کمک کنیم.
             </p>
           </div>
           <Card>
             <CardHeader>
-              <CardTitle>Contact Us</CardTitle>
-              <CardDescription>Fill out the form below to send us a message.</CardDescription>
+              <CardTitle>تماس با ما</CardTitle>
+              <CardDescription>برای ارسال پیام، فرم زیر را پر کنید.</CardDescription>
             </CardHeader>
             <CardContent>
               <Form {...form}>
@@ -81,9 +81,9 @@ export function ContactSection() {
                     name="name"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Name</FormLabel>
+                        <FormLabel>نام</FormLabel>
                         <FormControl>
-                          <Input placeholder="Your Name" {...field} />
+                          <Input placeholder="نام شما" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -94,7 +94,7 @@ export function ContactSection() {
                     name="email"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Email</FormLabel>
+                        <FormLabel>ایمیل</FormLabel>
                         <FormControl>
                           <Input placeholder="your.email@example.com" {...field} />
                         </FormControl>
@@ -107,16 +107,16 @@ export function ContactSection() {
                     name="message"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Message</FormLabel>
+                        <FormLabel>پیام</FormLabel>
                         <FormControl>
-                          <Textarea placeholder="How can we help?" {...field} rows={5} />
+                          <Textarea placeholder="چگونه می‌توانیم کمک کنیم؟" {...field} rows={5} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
                     )}
                   />
                   <Button type="submit" disabled={form.formState.isSubmitting}>
-                    {form.formState.isSubmitting ? 'Sending...' : 'Send Message'}
+                    {form.formState.isSubmitting ? 'در حال ارسال...' : 'ارسال پیام'}
                   </Button>
                 </form>
               </Form>
