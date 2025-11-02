@@ -13,7 +13,7 @@ const footerLinks = [
 const socialLinks = [
   { icon: <Twitter className="h-5 w-5" />, href: '#', name: 'توییتر' },
   { icon: <Github className="h-5 w-5" />, href: '#', name: 'گیت‌هاب' },
-  { icon: <Linkedin className="h-5 w-5" />, href: '#', anme: 'لینکدین' },
+  { icon: <Linkedin className="h-5 w-5" />, href: '#', name: 'لینکدین' },
 ];
 
 export function Footer() {
