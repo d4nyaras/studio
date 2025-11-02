@@ -2,12 +2,32 @@ import Link from 'next/link';
 import { Logo } from '@/components/logo';
 import { Github, Twitter, Linkedin } from 'lucide-react';
 
-const footerLinks = [
-  { href: '#features', name: 'ویژگی‌ها' },
-  { href: '#', name: 'قیمت‌گذاری' },
-  { href: '/blog', name: 'وبلاگ' },
-  { href: '#', name: 'درباره ما' },
-  { href: '#contact', name: 'تماس با ما' },
+const footerSections = [
+  {
+    title: 'محصول',
+    links: [
+      { href: '#features', name: 'ویژگی‌ها' },
+      { href: '#', name: 'قیمت‌گذاری' },
+      { href: '#ai-optimizer', name: 'بهینه‌ساز AI' },
+      { href: '#', name: 'دمو' },
+    ],
+  },
+  {
+    title: 'شرکت',
+    links: [
+      { href: '#', name: 'درباره ما' },
+      { href: '/blog', name: 'وبلاگ' },
+      { href: '#', name: 'فرصت‌های شغلی' },
+      { href: '#contact', name: 'تماس با ما' },
+    ],
+  },
+  {
+    title: 'حقوقی',
+    links: [
+      { href: '#', name: 'سیاست حفظ حریم خصوصی' },
+      { href: '#', name: 'شرایط خدمات' },
+    ],
+  },
 ];
 
 const socialLinks = [
@@ -19,35 +39,46 @@ const socialLinks = [
 export function Footer() {
   return (
     <footer className="bg-secondary/30 border-t">
-      <div className="container mx-auto px-4 py-12">
-        <div className="flex flex-col items-center text-center">
-          <Link href="/" className="flex items-center space-x-2 mb-4">
-            <Logo className="h-8 w-8 text-primary" />
-            <span className="text-xl font-bold font-headline">لندینگ‌فلو</span>
-          </Link>
-          <p className="text-muted-foreground max-w-md mb-6">
-            راه مدرن برای مدیریت هویت کاربر و گردش کار.
-          </p>
-          <nav className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-8">
-            {footerLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                className="text-muted-foreground hover:text-primary transition-colors"
-              >
-                {link.name}
-              </Link>
-            ))}
-          </nav>
-          <div className="flex items-center space-x-4 space-x-reverse mb-6">
+      <div className="container mx-auto px-4 py-12 md:py-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-8">
+          <div className="col-span-2 lg:col-span-1">
+            <Link href="/" className="flex items-center space-x-2 space-x-reverse mb-4">
+              <Logo className="h-8 w-8 text-primary" />
+              <span className="text-xl font-bold font-headline">لندینگ‌فلو</span>
+            </Link>
+            <p className="text-muted-foreground text-sm max-w-xs">
+              راه مدرن برای مدیریت هویت کاربر و گردش کار.
+            </p>
+          </div>
+          {footerSections.map((section) => (
+            <div key={section.title}>
+              <h3 className="font-headline font-semibold mb-4">{section.title}</h3>
+              <ul className="space-y-3">
+                {section.links.map((link) => (
+                  <li key={link.name}>
+                    <Link
+                      href={link.href}
+                      className="text-muted-foreground hover:text-primary transition-colors text-sm"
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
+        <div className="border-t pt-8 flex flex-col sm:flex-row-reverse items-center justify-between gap-4">
+          <div className="flex items-center space-x-4 space-x-reverse">
             {socialLinks.map((social) => (
               <Link
                 key={social.name}
                 href={social.href}
                 className="text-muted-foreground hover:text-primary transition-colors"
+                aria-label={social.name}
               >
                 {social.icon}
-                <span className="sr-only">{social.name}</span>
               </Link>
             ))}
           </div>
