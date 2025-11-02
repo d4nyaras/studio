@@ -34,19 +34,17 @@ export function FeaturesSection() {
             هر آنچه برای مدیریت کاربران و احراز هویت نیاز دارید، تا بتوانید بر روی ساخت محصول خود تمرکز کنید.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 gap-x-8 gap-y-12">
           {features.map((feature, index) => (
-            <Card key={feature.title} className="text-center transition-transform transform hover:-translate-y-2">
-              <CardHeader>
-                <div className="mx-auto bg-primary/10 p-4 rounded-full w-fit">
-                  {feature.icon}
-                </div>
-                <CardTitle className="font-headline pt-4">{feature.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
+            <div key={index} className="flex items-start gap-4">
+              <div className="bg-primary/10 p-3 rounded-full">
+                {feature.icon}
+              </div>
+              <div>
+                <h3 className="text-xl font-bold font-headline mb-2">{feature.title}</h3>
                 <p className="text-muted-foreground">{feature.description}</p>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           ))}
         </div>
       </div>
